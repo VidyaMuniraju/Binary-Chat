@@ -20,7 +20,7 @@ To get the app up and running on your device, a few installations are necessary.
 
  ```
 
-* Set up a firebase database for the app. For details [check this page.] (https://codinglatte.com/posts/how-to/how-to-create-a-firebase-project/)
+* Set up a firebase database for the app. For details [check this page.](https://codinglatte.com/posts/how-to/how-to-create-a-firebase-project/)
 
 * In the database’s project settings, under the general tab, choose Firestore for Web. Click Register and copy the configuration code into the app(find the variable firebaseConfig in the Chat.js file and replace your config key).
 Set up the storage in your database to store the images.
@@ -43,6 +43,6 @@ This installs all the dependencies.
 ```
 
 #### Screenshots:
-![Start Page] (https://github.com/VidyaMuniraju/Binary-Chat/blob/master/Assets-images/Screenshot1.png "Start Page")
+![Start Page](https://github.com/VidyaMuniraju/Binary-Chat/blob/master/Assets-images/Screenshot1.png "Start Page")
 
-![Chat Window] (https://github.com/VidyaMuniraju/Binary-Chat/blob/master/Assets-images/Screenshot2.png "Chat window")
+![Chat Window](https://github.com/VidyaMuniraju/Binary-Chat/blob/master/Assets-images/Screenshot2.png "Chat window")
