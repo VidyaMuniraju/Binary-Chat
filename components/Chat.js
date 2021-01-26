@@ -25,12 +25,10 @@ export default class Chat extends React.Component {
         _id: '',
         name: '',
         avatar: '',
-        createdAt: ''
       },
-      uid: '',
+      uid: 0,
       isConnected: false,
       image: null,
-      location: null,
     };
 
     // connecting to the database
@@ -85,6 +83,9 @@ export default class Chat extends React.Component {
     }
   }
 
+  // componentDidMount is a "lifecycle method". Lifecycle methods run the
+  // function at various times during a component's "lifecycle". For example
+  // componentDidMount will run right after the component was added to the page.
 
   componentDidMount() {
     
@@ -101,7 +102,11 @@ export default class Chat extends React.Component {
           else {
             this.setState({
               isConnected: true,
-              uid: user.uid,
+              user: {
+                _id: user.uid,
+                name: this.props.route.params.name,
+                avatar: 'https://placeimg.com/140/140/any'
+              },
               messages: [],
             });
             this.unsubscribe = this.referenceChatMessages.orderBy('createdAt', 'desc').onSnapshot(this.onCollectionUpdate); 
@@ -151,6 +156,7 @@ export default class Chat extends React.Component {
         _id: data._id,
         text: data.text,
         createdAt: data.createdAt.toDate(),
+        // user: data.user,
         user: {
           _id: data.user._id,
           name: data.user.name,
@@ -241,6 +247,9 @@ export default class Chat extends React.Component {
       <View style={{flex:1,  backgroundColor: bgcolor}}>
         {/* <Text>Hello!</Text> */}
         {/* using gifted chat library to implement the chat's functionality */}
+        {this.state.image &&
+          <Image source={{ uri: this.state.image.uri }}
+          style={{ width: 200, height: 200 }} />}        
         <GiftedChat
           renderBubble={this.renderBubble.bind(this)}
           messages={this.state.messages}
@@ -250,6 +259,7 @@ export default class Chat extends React.Component {
           user={this.state.user}
           renderActions={this.renderCustomActions}
           renderCustomView={this.renderCustomView}
+          image={this.state.image}
         />
         {/* a conditional statement to add the Keyboard Avoiding View if the platform OS is Android */}
         { Platform.OS === 'android' ? <KeyboardAvoidingView behavior="height" /> : null }

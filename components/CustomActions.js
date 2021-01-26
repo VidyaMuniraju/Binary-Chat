@@ -22,7 +22,7 @@ export default class CustomActions extends React.Component {
   
       if(!result.cancelled){
         const imageUrl = await this.uploadImageFetch(result.uri);
-        this.props.onSend({ image: imageUrl });
+        this.props.onSend({ image: imageUrl, text: "" });
       }
     }
   }
@@ -37,7 +37,7 @@ export default class CustomActions extends React.Component {
   
       if(!result.cancelled){
         const imageUrl = await this.uploadImageFetch(result.uri);
-        this.props.onSend({ image: imageUrl });
+        this.props.onSend({ image: imageUrl, text: "" });
       }
     }
   }
@@ -89,9 +89,9 @@ export default class CustomActions extends React.Component {
       console.log('snapshot', snapshot);
       blob.close();
 
-      // const imageDownload = await snapshot.ref.getDownloadURL();
-      // console.log(imageDownload);
-      // return imageDownload;
+      const imageDownload = await snapshot.ref.getDownloadURL();
+      console.log(imageDownload);
+      return imageDownload;
 
     }
     catch (e) {
