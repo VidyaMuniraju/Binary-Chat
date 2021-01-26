@@ -7,7 +7,10 @@ A chat application for mobile devices built with React Native.
 To get the app up and running on your device, a few installations are necessary.
 
 * Install Expo on your device:
-`code` $ npm install expo-cli —global
+```
+ $ npm install expo-cli —global
+
+ ```
 
 * Install Android Emulator or an iOS Simulator(either one will do).
 
@@ -23,14 +26,23 @@ To get the app up and running on your device, a few installations are necessary.
 Set up the storage in your database to store the images.
 
 * Change directory to the project directory, i.e., 
-`code` $ cd Binary-Chat
+```
+ $ cd Binary-Chat
+```
 
 * Next, execute the following command:
-`code` $ npm install
+```
+ $ npm install
+
+ ```
 This installs all the dependencies.
 
 * Run the app using
-`code` $ npm start or $ expo start
+```
+ $ npm start or $ expo start
+```
 
 #### Screenshots:
+[alt text] (https://github.com/VidyaMuniraju/Binary-Chat/blob/master/Assets-images/Screenshot1.png)
 
+[alt text] (https://github.com/VidyaMuniraju/Binary-Chat/blob/master/Assets-images/Screenshot2.png)
