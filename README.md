@@ -12,7 +12,10 @@ To get the app up and running on your device, a few installations are necessary.
 * Install Android Emulator or an iOS Simulator(either one will do).
 
 * Clone my repository:
-`code` $ git clone https://github.com/VidyaMuniraju/Binary-Chat.git
+```
+ $ git clone https://github.com/VidyaMuniraju/Binary-Chat.git
+
+ ```
 
 * Set up a firebase database for the app. For details [check this page.] (https://codinglatte.com/posts/how-to/how-to-create-a-firebase-project/)
 
