@@ -55,8 +55,9 @@ export default class CustomActions extends React.Component {
         this.props.onSend({
           location: {
             longitude: longitude,
-            latitude: latitude
-          }
+            latitude: latitude,
+          },
+          text: ""
         });
       }
     }
