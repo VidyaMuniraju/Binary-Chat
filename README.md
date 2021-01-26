@@ -43,6 +43,6 @@ This installs all the dependencies.
 ```
 
 #### Screenshots:
-! [alt text] (https://github.com/VidyaMuniraju/Binary-Chat/blob/master/Assets-images/Screenshot1.png "Start Page")
+![Start Page] (https://github.com/VidyaMuniraju/Binary-Chat/blob/master/Assets-images/Screenshot1.png "Start Page")
 
-! [alt text] (https://github.com/VidyaMuniraju/Binary-Chat/blob/master/Assets-images/Screenshot2.png "Chat window")
+![Chat Window] (https://github.com/VidyaMuniraju/Binary-Chat/blob/master/Assets-images/Screenshot2.png "Chat window")
