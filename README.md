@@ -2,7 +2,7 @@
 
 A chat application for mobile devices built with React Native.
 
-#### Installation
+### Installation
 
 To get the app up and running on your device, a few installations are necessary.
 
@@ -42,7 +42,7 @@ This installs all the dependencies.
  $ npm start or $ expo start
 ```
 
-#### Screenshots:
+### Screenshots:
 ![Start Page](https://github.com/VidyaMuniraju/Binary-Chat/blob/master/Assets-images/Screenshot1.png "Start Page")
 
 ![Chat Window](https://github.com/VidyaMuniraju/Binary-Chat/blob/master/Assets-images/Screenshot2.png "Chat window")
